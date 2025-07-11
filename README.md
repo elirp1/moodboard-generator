@@ -32,7 +32,7 @@ The app will open at `http://localhost:8501`.
 
 - Extract full color palettes from images
 - Create moodboards in a horizontal layout
-- Export moodboards and palettes as PDFs
+- Export moodboards and palettes as PDFs (supports multi-page output if needed)
 - Detect interior design style from uploaded images (prototype)
 
 ## Future Improvements
