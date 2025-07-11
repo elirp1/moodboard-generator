@@ -5,7 +5,10 @@ def create_pdf(moodboard_path, palettes, filename="moodboard.pdf"):
     page_width, page_height = letter
     c = canvas.Canvas(filename, pagesize=letter)
 
-    c.drawImage(moodboard_path, 50, page_height - 350, width=500, height=300)
+    def add_moodboard():
+        c.drawImage(moodboard_path, 50, page_height - 350, width=500, height=300)
+
+    add_moodboard()
 
     y = page_height - 400
     box_height = 30
@@ -16,7 +19,7 @@ def create_pdf(moodboard_path, palettes, filename="moodboard.pdf"):
         for color in palette:
             if y < 50:  # Start a new page if space runs out
                 c.showPage()
-                c.drawImage(moodboard_path, 50, page_height - 350, width=500, height=300)
+                add_moodboard()
                 y = page_height - 400
 
             c.setFillColorRGB(color[0]/255, color[1]/255, color[2]/255)
