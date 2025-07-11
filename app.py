@@ -57,7 +57,7 @@ if uploaded_files:
     # Export to PDF
     if st.button("Export Moodboard & Palette as PDF"):
         pdf_path = "moodboard.pdf"
-        create_pdf(moodboard_path, all_palettes, filename=pdf_path)
+        create_pdf(moodboard_path, moodboard.size, all_palettes, filename=pdf_path)
         with open(pdf_path, "rb") as file:
             st.download_button(label="Download PDF", data=file, file_name="moodboard.pdf", mime="application/pdf")
 
