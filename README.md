@@ -6,7 +6,7 @@ A Streamlit app for interior designers to create moodboards, extract color palet
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/moodboard-app.git
+   git clone https://github.com/elirp1/moodboard-app.git
    cd moodboard-app
    ```
 
